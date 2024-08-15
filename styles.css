@@ -20,9 +20,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 40px rgba(0, 255, 255, 0.2), 0 0 60px rgba(0, 255, 255, 0.2);
     max-width: 90vw;
-    height: 90vh;
+    height: 95vh; /* Höherer Container */
     text-align: center;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,6 +58,14 @@ input[type="date"] {
 }
 
 /* Live-Anzeige */
+#liveDisplay {
+    margin-bottom: 2vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #liveDisplay h2 {
     font-size: 3vw;
     color: #00ffff;
@@ -82,7 +89,10 @@ input[type="date"] {
 /* Umrechnung */
 #convertedTime {
     margin-top: 2vh;
-    flex-grow: 1;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #convertedTime h3 {
@@ -98,7 +108,7 @@ input[type="date"] {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around; /* Gleichmäßige Verteilung */
     height: 100%;
 }
 
@@ -121,7 +131,7 @@ input[type="date"] {
 
 /* Entfernt doppelte Zeiteinheiten */
 #convertedTime li span::after {
-    content: ''; 
+    content: '';
 }
 
 /* Hover-Effekt für interaktive Elemente */
