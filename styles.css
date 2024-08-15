@@ -5,11 +5,11 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Anpassung für vertikales Layout */
     height: 100vh;
     margin: 0;
-    padding: 0 20px; /* Padding hinzugefügt, um Ränder auf kleinen Bildschirmen zu vermeiden */
-    box-sizing: border-box; /* Sorgt dafür, dass Padding im Element enthalten ist */
+    padding-top: 50px; /* Mehr Platz oben */
+    box-sizing: border-box;
 }
 
 /* Container-Stil */
@@ -27,7 +27,8 @@ body {
 h1 {
     color: #00ffff;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Mehr Abstand unter dem Titel */
+    margin-top: 20px; /* Abstand über dem Titel */
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
 }
 
@@ -35,7 +36,7 @@ h1 {
 label {
     font-size: 1.2em;
     color: #a0a0b0;
-    display: block; /* Labels als Blockelemente */
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -49,7 +50,7 @@ input[type="date"] {
     color: #ffffff;
     box-shadow: inset 0 0 10px #00ffff;
     text-align: center;
-    width: 100%; /* Volle Breite des Containers auf mobilen Geräten */
+    width: 100%;
 }
 
 /* Live-Anzeige */
@@ -68,7 +69,7 @@ input[type="date"] {
     border: 2px solid #00ffff;
     box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
     color: #00ff99;
-    word-wrap: break-word; /* Textumbruch bei langen Texten */
+    word-wrap: break-word;
 }
 
 /* Umrechnung */
@@ -97,7 +98,7 @@ input[type="date"] {
     border: 1px solid #00ffff;
     box-shadow: inset 0 0 10px #00ffff;
     color: #00ff99;
-    word-wrap: break-word; /* Textumbruch bei langen Texten */
+    word-wrap: break-word;
 }
 
 /* Hover-Effekt für interaktive Elemente */
@@ -134,7 +135,7 @@ input[type="date"]:hover {
     .container {
         width: 100%;
         padding: 20px;
-        box-shadow: none; /* Entfernt intensive Schatten auf sehr kleinen Bildschirmen */
+        box-shadow: none;
     }
 
     h1 {
