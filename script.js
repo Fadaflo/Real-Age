@@ -19,13 +19,13 @@ document.getElementById('birthdate').addEventListener('change', function() {
         const totalSeconds = Math.floor(diff / 1000);
 
         // Statische Umrechnung der Gesamtdauer in die verschiedenen Einheiten
-        document.getElementById('totalYears').textContent = years.toLocaleString() + ' Jahre';
-        document.getElementById('totalMonths').textContent = (years * 12 + months).toLocaleString() + ' Monate';
-        document.getElementById('totalWeeks').textContent = Math.floor(diff / (1000 * 60 * 60 * 24 * 7)).toLocaleString() + ' Wochen';
-        document.getElementById('totalDays').textContent = Math.floor(diff / (1000 * 60 * 60 * 24)).toLocaleString() + ' Tage';
-        document.getElementById('totalHours').textContent = Math.floor(diff / (1000 * 60 * 60)).toLocaleString() + ' Stunden';
-        document.getElementById('totalMinutes').textContent = totalMinutes.toLocaleString() + ' Minuten';
-        document.getElementById('totalSeconds').textContent = totalSeconds.toLocaleString() + ' Sekunden';
+        document.getElementById('totalYears').textContent = years.toLocaleString();
+        document.getElementById('totalMonths').textContent = (years * 12 + months).toLocaleString();
+        document.getElementById('totalWeeks').textContent = Math.floor(diff / (1000 * 60 * 60 * 24 * 7)).toLocaleString();
+        document.getElementById('totalDays').textContent = Math.floor(diff / (1000 * 60 * 60 * 24)).toLocaleString();
+        document.getElementById('totalHours').textContent = Math.floor(diff / (1000 * 60 * 60)).toLocaleString();
+        document.getElementById('totalMinutes').textContent = totalMinutes.toLocaleString();
+        document.getElementById('totalSeconds').textContent = totalSeconds.toLocaleString();
 
         // Zeige initiale Zeit an
         document.getElementById('liveTime').textContent = `${years} Jahre, ${months} Monate, ${weeks} Wochen, ${days} Tage, ${hours} Stunden, ${totalMinutes % 60} Minuten, ${totalSeconds % 60} Sekunden`;
