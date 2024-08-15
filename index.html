@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Lebenszeitrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lebenszeitrechner</h1>
+        <label for="birthdate">Geben Sie Ihr Geburtsdatum ein:</label>
+        <input type="date" id="birthdate">
+        
+        <div id="liveDisplay">
+            <h2>Sie leben seit:</h2>
+            <p id="liveTime"></p>
+        </div>
+
+        <div id="convertedTime">
+            <h3>Umrechnung:</h3>
+            <ul>
+                <li><span id="totalYears">0</span> Jahre</li>
+                <li><span id="totalMonths">0</span> Monate</li>
+                <li><span id="totalWeeks">0</span> Wochen</li>
+                <li><span id="totalDays">0</span> Tage</li>
+                <li><span id="totalHours">0</span> Stunden</li>
+                <li><span id="totalMinutes">0</span> Minuten</li>
+                <li><span id="totalSeconds">0</span> Sekunden</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
