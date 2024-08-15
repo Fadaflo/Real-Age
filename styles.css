@@ -5,10 +5,10 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Startet den Inhalt weiter oben */
     height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 20px; /* Erhöhtes Padding */
     box-sizing: border-box;
     overflow-y: auto;
 }
@@ -16,28 +16,29 @@ body {
 /* Container-Stil */
 .container {
     background-color: #2a2a3d;
-    padding: 20px;
+    padding: 30px; /* Erhöhtes Padding für den Container */
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 40px rgba(0, 255, 255, 0.2), 0 0 60px rgba(0, 255, 255, 0.2);
-    max-width: 500px;
+    max-width: 800px; /* Feste maximale Breite */
     width: 100%;
     height: auto;
     text-align: center;
-    margin-bottom: 20px;
+    overflow-y: auto; /* Ermöglicht Scrollen innerhalb des Containers */
+    margin-top: 20px; /* Mehr Abstand zum oberen Rand des Bildschirms */
 }
 
 /* Titel */
 h1 {
     color: #00ffff;
-    font-size: 2.5vw;
+    font-size: 2em; /* Feste Schriftgröße */
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px; /* Mehr Platz über dem Titel */
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
 }
 
 /* Labels und Eingabe */
 label {
-    font-size: 1.5vw;
+    font-size: 1.2em; /* Feste Schriftgröße */
     color: #a0a0b0;
     display: block;
     margin-bottom: 10px;
@@ -46,26 +47,26 @@ label {
 input[type="date"] {
     margin: 20px 0;
     padding: 10px;
-    font-size: 1.5vw;
+    font-size: 1.2em; /* Feste Schriftgröße */
     border: 2px solid #00ffff;
     border-radius: 5px;
     background-color: #1e1e2f;
     color: #ffffff;
     box-shadow: inset 0 0 10px #00ffff;
     text-align: center;
-    width: 100%; /* Passt das Eingabefeld in den Container ein */
-    box-sizing: border-box; /* Stellt sicher, dass das Padding enthalten ist */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Live-Anzeige */
 #liveDisplay h2 {
-    font-size: 2vw;
+    font-size: 1.8em; /* Feste Schriftgröße */
     color: #00ffff;
     margin-bottom: 10px;
 }
 
 #liveTime {
-    font-size: 1.8vw;
+    font-size: 1.3em; /* Feste Schriftgröße */
     font-weight: bold;
     background-color: #1e1e2f;
     padding: 15px;
@@ -83,7 +84,7 @@ input[type="date"] {
 }
 
 #convertedTime h3 {
-    font-size: 1.5vw;
+    font-size: 1.5em; /* Feste Schriftgröße */
     color: #00ffff;
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
     margin-bottom: 20px;
@@ -95,7 +96,7 @@ input[type="date"] {
 }
 
 #convertedTime li {
-    font-size: 1.5vw;
+    font-size: 1.2em; /* Feste Schriftgröße */
     margin: 12px 0;
     padding: 10px;
     background-color: #2a2a3d;
@@ -108,7 +109,7 @@ input[type="date"] {
 
 /* Entfernt doppelte Zeiteinheiten */
 #convertedTime li span::after {
-    content: ''; /* Keine doppelte Zeiteinheit hinzufügen */
+    content: ''; 
 }
 
 /* Hover-Effekt für interaktive Elemente */
@@ -129,22 +130,22 @@ input[type="date"]:hover {
 /* Anpassungen für kleinere Bildschirme */
 @media (max-width: 768px) {
     h1 {
-        font-size: 3.5vw;
+        font-size: 1.5em;
     }
 
     #liveTime, #convertedTime li {
-        font-size: 3vw;
+        font-size: 1.3em;
     }
 
     input[type="date"] {
-        font-size: 3vw;
+        font-size: 1.2em;
     }
 
     #liveDisplay h2 {
-        font-size: 3.5vw;
+        font-size: 1.5em;
     }
 
     #convertedTime h3 {
-        font-size: 3.5vw;
+        font-size: 1.3em;
     }
 }
